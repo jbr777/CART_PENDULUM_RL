@@ -42,7 +42,7 @@ class CartPendulumEnv(Env):
     
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
-        # Reset to random initial state near the bottom
+        # Reset to random initial state near the upright position
         self.state = np.array([
             self.np_random.uniform(low=-0.1, high=0.1),  # x
             0.0,                                         # x_dot
